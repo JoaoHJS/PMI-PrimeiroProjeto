@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+
+
+#menu-container{
+    height: 100%;
+    width: 350px;
+    background-color: #386FA4;
+    padding: 3% 0;
+    gap: 30px;
+}
+#enem-logo{
+    fill: #fff;
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+#menu-items{
+    color: #fff;
+    gap: 20px;
+}
+
+#menu-items ul{
+    padding: 40px;
+    font-size: 24px;
+}
+#menu-items a{
+    color: #fff;
+}
+#menu-items ul:hover{
+    background-color: #254B71;
+}
+#apresentacao-container{
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;    
+}
+
+#apresentacao-container h2{
+    color: #254B71;
+    font-size: 60px;
+}
+
+
+#apresentacao-container p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+#apresentacao-container p:last-child{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    gap: 50px;
+}
+
+#links p:last-child{
+    margin-top: 0;
+}
