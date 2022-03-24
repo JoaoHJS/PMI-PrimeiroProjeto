@@ -1,29 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 
 }
 body{
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(229, 229, 229);
 }
 
+#background-container{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(11, 77, 155);
+    top: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-container{
+    height: 80%;
+    width: 60%;
+    z-index: 1;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 25%) 4px 4px 4px;
+}
 
 #menu-container{
     height: 100%;
     width: 350px;
-    background-color: #386FA4;
+    background-color: rgb(8, 103, 184);
     padding: 3% 0;
     gap: 30px;
+    border-radius: 5px 0 0 5px;
 }
 #enem-logo{
-    fill: #fff;
+    
     width: 350px;
     margin-bottom: 100px;
 }
@@ -35,28 +59,87 @@ body{
 
 #menu-items ul{
     padding: 40px;
-    font-size: 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    gap: 40px;
 }
+
+#menu-items ul i, #menu-items ul a{
+    width: 100%;
+}
+
+.icon{
+    fill: #fff;
+    height: 50px;
+    width: 50px;
+}
+
 #menu-items a{
     color: #fff;
 }
 #menu-items ul:hover{
     background-color: #254B71;
+    cursor: pointer;
 }
-#apresentacao-container{
-    padding: 0 8%;
+
+#content-container{
+    background-color: #fff;
+    padding: 40px 8%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;    
+    position: relative;
+}
+
+#instrucoes{
+    background-color: #fff;
+    padding: 40px 15%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+#instrucoes button{
+    width: 200px;
+    height: 64px;
+    background-color: rgb(8, 103, 184);
+    color: #fff;
+    border: 0px;
+    outline: 0;
+}
+.invisible{
+    display: none !important;
+}
+
+#apresentacao-container{
+    background-color: #fff;
+    padding: 0  8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #apresentacao-container h2{
     color: #254B71;
     font-size: 60px;
 }
-
+h3{
+    color: #254B71;
+    font-size: 30px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 #apresentacao-container p{
     text-align: justify;
@@ -76,6 +159,283 @@ body{
     gap: 50px;
 }
 
+#textos-container{
+    width: 100%;
+    min-height: 60%;
+    max-height: 70%;
+    background-color: #C6DBF0;
+    padding: 50px;
+    border-radius: 5px 5px 0 0 ;
+
+    position: relative;
+}
+
+#alternativas-container{
+    width: 100%;
+    min-height: 30%;
+    max-height: 40%;
+    background-color: #254B71;
+    color: rgb(237,237,237);
+    border-radius: 0 0 5px 5px;
+
+}
+
+#card-sem-resposta{
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50%- 200px);
+    width: 400px;
+    height: 100px;
+    background-color: rgb(237,237,237);
+    border-radius: 15px;
+    z-index: 10000;
+    display: none;
+    padding: 10px 20px;
+    gap: 10px;
+    text-align: start;
+}
+#card-sem-resposta div{
+    margin-left: 10px;
+}
+#card-sem-resposta div h3{
+    margin: 0;
+    color: #F4D011;
+    text-align: start;
+}
+
+#card-errada{
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50%- 200px);
+    width: 400px;
+    height: 100px;
+    background-color: rgb(237,237,237);
+    border-radius: 15px;
+    z-index: 10000;
+    display: none;
+    padding: 10px 20px;
+    gap: 10px;
+    text-align: start;
+}
+#card-errada div{
+    margin-left: 10px;
+}
+#card-errada div h3{
+    margin: 0;
+    color: #F05D5D;
+    text-align: start;
+}
+
+#card-certa{
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50%- 200px);
+    width: 400px;
+    height: 100px;
+    background-color: rgb(237,237,237);
+    border-radius: 15px;
+    z-index: 10000;
+    display: none;
+    padding: 10px 20px;
+    gap: 10px;
+    text-align: start;
+}
+#card-certa div{
+    margin-left: 10px;
+}
+#card-certa div h3{
+    margin: 0;
+    color: #B1D26B;
+    text-align: start;
+}
+
+#card-sem-resposta div p, #card-certa div p, #card-errada div p{
+    margin-top: 0 !important ;
+}
+
+.visible{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#alternativas{
+    padding: 10px 50px;
+}
+#pergunta-container{
+    margin-bottom: 20px;
+    text-align: start;
+}
+#respostas-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#respostas-container button{
+    color: #fff;
+    background-color: rgb(8, 103, 184);
+    outline: 0;
+    border: 0;
+}
+
 #links p:last-child{
     margin-top: 0;
+}
+.avatar{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color:  rgb(237,237,237);
+    top: 25px;
+    border-radius: 50%;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-img{
+    width: 60px !important;
+    height: 60px;
+    background-color: #838282;
+    border-radius: 50%;
+    
+}
+
+.chat-message-apresentacao{
+    background-color: rgb(237,237,237);
+    color: rgb(66, 66, 66);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px 50px;
+    z-index: 1;
+}
+.chat-message-apresentacao::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid rgb(237,237,237);
+    position: absolute;
+    top: 55px;
+    left: -25px;
+    z-index: 0;
+}
+
+.chat-message{
+    background-color: rgb(237,237,237);
+    color: rgb(66, 66, 66);
+    height: 90%;
+    width: 90%;
+    position: relative;
+    padding: 20px 50px;
+    z-index: 1;
+   
+}
+
+.fonte{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-left: 20%;
+}
+
+.chat-message::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid rgb(237,237,237);
+    position: absolute;
+    top: 55px;
+    left: -25px;
+    z-index: 0;
+}
+
+.chat-message ul{
+    list-style: circle !important;
+    padding-left: 40px;
+}
+
+#img-creditos{
+    position: absolute;
+    bottom: 00px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+}
+
+#img-sobre{
+    position: absolute;
+    bottom: 00px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+#img-sobre img{
+    width: 25%;
+    
+}
+
+.chat-message img{
+    width: 50%;
+    
+}
+
+#status-atividades div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#ultimo-paragrafo{
+    font-weight: normal !important;
+    margin-top: 10px !important;
+}
+.status{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.azul{
+    background-color: #254B71;
+}
+
+.cinza{
+    background-color: #c4c4c4;
+}
+
+.verde{
+    background-color: #B1D26B;
+
+}
+.vermelho{
+    background-color: #F05D5D;
+}
+
+
+@media (max-height: 1100px){
+  
+
+    #apresentacao-container p{
+        text-align: justify;
+        font-size: 14px;
+    }
+    
 }
