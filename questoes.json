@@ -12,7 +12,7 @@
             "C": "elevação de etapas burocráticas.",
             "D": "diversificação do lazer recreativo.",
             "E": "desobrigação de afazeres domésticos.",
-            "correta": "D"
+            "correta": "B"
         } 
     },
     "pergunta2" : {
@@ -28,7 +28,7 @@
             "C": "eficácia da legislação.",
             "D": "ganho das financeiras.",
             "E": "eficiência dos mercados.",
-            "correta": "B"
+            "correta": "A"
         } 
     },
     "pergunta3" : {
@@ -40,7 +40,7 @@
         "pergunta":"Para melhorar a produção agrícola nas regiões mencionadas, as técnicas referidas no texto buscaram adaptar o cultivo aos(às)",
         "respostas" : {
             "A": "espécies nativas ameaçadas.",
-            "B": "adeias econômicas autônomas.",
+            "B": "cadeias econômicas autônomas.",
             "C": "estruturas fundiárias tradicionais.",
             "D": "elementos ambientais singulares.",
             "E": "mercados consumidores internos.",
@@ -65,7 +65,7 @@
             "C": "políticas de conservação de bens culturais.",
             "D": "defesa da privatização de sítios arqueológicos.",
             "E": "medidas de salvaguarda de peças museológicas.",
-            "correta": "B"
+            "correta": "C"
         } 
     },
     "pergunta5" : {
@@ -86,7 +86,7 @@
             "C": "Gestão empresarial do toyotismo.",
             "D": "Concepção sustentável da economia.",
             "E": "Protecionismo alfandegário dos Estados.",
-            "correta": "A"
+            "correta": "B"
         } 
     },
     "pergunta6" : {
@@ -102,7 +102,7 @@
             "C": "racionamento da capacidade fluvial.",
             "D": "revitalização gradativa de solos.",
             "E": "geração de produtos recicláveis.",
-            "correta": "E"
+            "correta": "A"
         } 
     },
     "pergunta7" : {
@@ -134,7 +134,7 @@
             "C": "Manifestações teatrais atreladas ao imaginário político.",
             "D": "Narrativas fílmicas  relacionadas  às  intempéries climáticas.",
             "E": "Argumentações literárias interligadas às catástrofes ambientais.",
-            "correta": "A"
+            "correta": "B"
         } 
     },
     "pergunta9" : {
@@ -150,7 +150,7 @@
             "C": "fragilização das relações de trabalho.",
             "D": "hierarquização dos cargos executivos.",
             "E": "aplicação dos conhecimentos da ciência.",
-            "correta": "E"
+            "correta": "C"
         } 
     },
     "pergunta10" : {
@@ -182,7 +182,7 @@
             "C": "superação do pensamento patriarcal.",
             "D": "incorporação das estratificações sociais.",
             "E": "substituição das atividades domésticas.",
-            "correta": "A"
+            "correta": "D"
         } 
     },
     "pergunta12" : {
@@ -198,7 +198,7 @@
             "C": "prescrições coletivas de organização.",
             "D": "mecanismos subjetivos de identificação.",
             "E": "repressões racionalizadas do narcisismo.",
-            "correta": "C"
+            "correta": "D"
         } 
     },
     "pergunta13" : {
@@ -214,7 +214,7 @@
             "C": "ampliação das normas de controle ambiental.",
             "D": "flexibilização das regras de participação política.",
             "E": "alteração da organização da paisagem geográfica.",
-            "correta": "A"
+            "correta": "E"
         } 
     },
     "pergunta14" : {
@@ -230,7 +230,7 @@
             "C": "negação das tradições.",
             "D": "padronização das culturas.",
             "E": "uniformização das informações.",
-            "correta": "E"
+            "correta": "B"
         } 
     },
     "pergunta15" : {
@@ -246,7 +246,7 @@
             "C": "Altruísmo religioso.",
             "D": "Autocontrole moral.",
             "E": "Inconformismo eleitoral.",
-            "correta": "E"
+            "correta": "B"
         } 
     },
     "pergunta16" : {
@@ -262,7 +262,7 @@
             "C": "democratização da habitação popular.",
             "D": "valorização das funções tradicionais.",
             "E": "priorização da gestão participativa.",
-            "correta": "B"
+            "correta": "A"
         } 
     },
     "pergunta17" : {
@@ -278,7 +278,7 @@
             "C": "ampliação do poder de consumo.",
             "D": "subordinação aos fluxos globais.",
             "E": "incentivo à política de modernização.",
-            "correta": "A"
+            "correta": "D"
         } 
     },
     "pergunta18" : {
@@ -294,7 +294,7 @@
             "C": "carência de investimento financeiro.",
             "D": "estabelecimento de práticas agroecológicas.",
             "E": "enriquecimento das comunidades autóctones.",
-            "correta": "A"
+            "correta": "B"
         } 
     },
             
@@ -311,7 +311,7 @@
             "C":"relações de natureza arbitrária.",
             "D":"valorações de conexões simétricas.",
             "E":"hierarquizações de origem biológica.",
-            "correta":"D"
+            "correta":"C"
         }
     },
 
@@ -328,7 +328,7 @@
                 "C":"fundamentos do método científico.",
                 "D":"paradigmas do processo indagativo.",
                 "E":"domínios do fetichismo da mercadoria.",
-                "correta":"E"
+                "correta":"A"
         }
     },
         "pergunta21": {
@@ -344,7 +344,7 @@
                 "C":"redução da maioridade penal.",
                 "D":"contenção da corrupção política.",
                 "E":"expansão do período de reclusão.",
-                "correta":"A"
+                "correta":"B"
         }
     },
         "pergunta22" :{
@@ -360,7 +360,7 @@
                 "C":"transformação do imaginário popular e das crenças religiosas.",
                 "D":"remodelação dos sistemas politicos e das administrações locais.",
                 "E":"reconfiguração dos espaços ocupados e das dinâmicas comunitárias.",
-                "correta":"B"
+                "correta":"E"
         }
 
     },
@@ -394,7 +394,7 @@
                 "C":"obter conhecimento científico das diversidades regionais.",
                 "D":"conter o fluxo migratório do campo para a cidade.",
                 "E":"propor a criação de novas unidades da federação.",
-                "correta":"B"
+                "correta":"C"
         }
     },
 
@@ -411,7 +411,7 @@
                 "C":"saber tradicional para a conservação ambiental.",
                 "D":"criação de gado para o aprimoramento genético.",
                 "E":"reflorestamento comercial para a produção orgânica.",
-                "correta":"E"
+                "correta":"C"
         }
     },
         "pergunta26" :{
@@ -427,7 +427,7 @@
                 "C":"Intemperismo biológico.",
                 "D":" Derramamento basáltico.",
                 "E":"Compactação superficial.",
-                "correta":"D"
+                "correta":"A"
         }
     },
         "pergunta27" :{
@@ -443,7 +443,7 @@
                 "C":"Adensamento das áreas de comércio.",
                 "D":"Valorização dos condomínios fechados.",
                 "E":"Fortalecimento das associações de bairro.",
-                "correta":"A"
+                "correta":"E"
         }
     },
     "pergunta28" :{
@@ -459,7 +459,7 @@
             "C":"abertura democrática.",
             "D":"campanha anticomunista.",
             "E":"radicalização oposicionista.",
-            "correta":"C"
+            "correta":"A"
         }
     },
     "pergunta29" :{
@@ -491,7 +491,7 @@
             "C":"superação da tradição popular.",
             "D":"imposição da farmacologia nativa.",
             "E":"conjugação de saberes empíricos.",
-            "correta":"C"
+            "correta":"E"
         }
     },
     "pergunta31" :{
@@ -525,7 +525,7 @@
             "C":"abandono sofrido pelas comunidades de docentes na concepção de coletividades políticas.",
             "D":"lugar ocupado pelas associações de acadêmicos no fortalecimento das agremiações estudantis.",
             "E":"protagonismo assumido pelos meios de comunicação no desenvolvimento das nações alfabetizadas.",
-            "correta":"D"
+            "correta":"A"
         }
     },
     "pergunta33" :{
@@ -546,7 +546,7 @@
             "C":"unicidade das abordagens históricas",
             "D":"superficialidade dos interesses políticos.",
             "E":"superioridade dos aspectos econômicos.",
-            "correta":"D"
+            "correta":"A"
         }
     },
     "pergunta34" :{
@@ -562,7 +562,7 @@
             "C":"Recuperação de áreas degradadas. ",
             "D":"Incorporação de saberes tradicionais. ",
             "E":"Importação de mão de obra qualificada.",
-            "correta":"B"
+            "correta":"E"
         }
     },
 
@@ -579,7 +579,7 @@
             "C":"descompassos na construção dE quadros institucionais modernos.",
             "D":"ilegitimidade na atuação dos movimentos de representação classista.",
             "E":"vagarosidade na dinâmica de aperfeiçoamento dos programas partidários.",
-            "correta":"B"
+            "correta":"C"
         }
     },
     "pergunta36" :{
@@ -595,7 +595,7 @@
             "C":"ampliação de vagas e formação de gestores.",
             "D":"disponibilidade de financiamento e pesquisa avançada.",
             "E":"remuneração de professores e extinção do analfabetismo.",
-            "correta":"A"
+            "correta":"B"
         }
     },
     "pergunta37" : {
@@ -627,7 +627,7 @@
             "C": "desvalorização dos comportamentos da juventude",
             "D": "destituição dos valores do matrimônio",
             "E": "etnografia das celebrações religiosas",
-            "correta": "B"
+            "correta": "A"
         } 
     },
     "pergunta39" : {
@@ -643,7 +643,7 @@
             "C": "superar a atividade artesanal",
             "D": "manipular a memória individual",
             "E": "modernizar o comércio tradicional",
-            "correta": "C"
+            "correta": "B"
         } 
     } ,
     "pergunta40" : {
@@ -659,7 +659,7 @@
             "C": "Suavização da aplicação de normas.",
             "D": "Regularização das funções remuneradas.",
             "E": "Constituição de economia de subsistência.",
-            "correta": "C"
+            "correta": "A"
     }
 },
     "pergunta41" : {
@@ -675,7 +675,7 @@
             "C": "impulsionar o pensamento especulativo.",
             "D": "recepcionar o método experimental.",
             "E": "incentivar a suspensão dos juízos.",
-            "correta": "B"
+            "correta": "A"
         } 
     },
     "pergunta42" : {
@@ -691,7 +691,7 @@
             "C": "associa os cultos pagãos à sacralização da natureza",
             "D": "condena os modelos filosóficos da Antiguidade Clássica.",
             "E": "consagra a realização humana ao campo transcendental.",
-            "correta": "A"
+            "correta": "E"
         } 
     },
     "pergunta43" : {
@@ -707,7 +707,7 @@
             "C": "Desqualificação da atividade laboral. ",
             "D": "Condenação da alimentação impura",
             "E": "Desvalorização da materialidade corpórea.",
-            "correta": "B"
+            "correta": "E"
         } 
     },
     "pergunta44" : {
@@ -723,7 +723,7 @@
             "C": "leste.",
             "D": "oeste.",
             "E": "nordeste.",
-            "correta": "A"
+            "correta": "B"
         } 
     },
     "pergunta45" : {
