@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"> </script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.js"> </script>
     <div id="background-container"> <img id="enem-logo" src="../assets/logo-enem-svg.svg" alt="Enem LOGO" /></div>
     
     <div id="page-container">
@@ -63,10 +65,21 @@
                 <p><b> BOA PROVA! </b> </p><br>
                 <button onclick="invisibleCardInstructions()"> Iniciar simulado </button>
             </div>
+
+            <div id="finalizada" class="invisible"> 
+                <h3> Você concluiu o simulado! Parabens!</h3> <br><br>
+                
+                <h3> Você acertou <span id="resultado"></span> </h3><br><br>
+                <div id="botoes" >  
+                    <button onclick="resetQuestions()"> Refazer prova </button>
+                    <button onclick="showFeedback()"> Ver gabarito </button>
+                </div>
+            </div>
+            </div>
         </div>
-       
+        
     </div>
-   
-    <script src="../js/app.js"></script>
+
+    <script defer src="../js/app.js"></script>
 </body>
 </html>

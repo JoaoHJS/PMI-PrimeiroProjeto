@@ -16,88 +16,97 @@ const wrongAnswerCard = document.getElementById("card-errada");
 const infoWrongAnswer = document.getElementById("info-resposta");
 const correctAnswerCard = document.getElementById("card-certa");
 const instructionsCard = document.getElementById("instrucoes");
+const finishedCard = document.getElementById("finalizada");
+const spanResult = document.getElementById("resultado");
 
 let questionCorrect = '';
 let result = {};
 let count = 0;
 let questionInfo = questions[questionsList[count]];
 let statusItems = "";
+let correta = 0;
 
 function mudarPergunta(){
-    
-    questionInfo = questions[questionsList[count]];
-
-    if(count == 0){
-        statusItems = `
-                        <div>
-                            <div class="status azul">${count+1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> <div class="status cinza">${count + 6}</div> <div class="status cinza">${count + 7}</div> 
-                        <div>
-        `;
-    }else
-    if(count == 1){
-        statusItems = `
-                        <div>
-                            <div class="status ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> <div class="status cinza">${count + 6}</div> 
-                        <div>
-        `;
-    }else
-    if(count == 2){
-        statusItems = `
-                        <div>
-                            <div class="status ${result[count-2].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> 
-                        <div>
-        `
-    }else
-    if(count == 3){
-        statusItems = `
-                        <div>
-                            <div class="status ${result[count-3].acertou ? "verde" : "vermelho"}">${count - 2}</div> <div class="status  ${result[count-2].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> 
-                        <div>
-        `;
+    if(count > 45){
+        
+        spanResult.innerText = correta;
+        finishedCard.className = "";
     }else{
-        statusItems = `
-                        <div>
-                            <div class="status ${result[count-4].acertou ? "verde" : "vermelho"}">${count -2}</div> <div class="status  ${result[count-3].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-2].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status ${result[count-1].acertou ? "verde" : "vermelho"}">${count + 1}</div> <div class="status azul">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> 
-                        <div>
+        questionInfo = questions[questionsList[count]];
+
+        if(count == 0){
+            statusItems = `
+                            <div>
+                                <div class="status azul">${count+1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> <div class="status cinza">${count + 6}</div> <div class="status cinza">${count + 7}</div> 
+                            <div>
+            `;
+        }else
+        if(count == 1){
+            statusItems = `
+                            <div>
+                                <div class="status ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> <div class="status cinza">${count + 6}</div> 
+                            <div>
+            `;
+        }else
+        if(count == 2){
+            statusItems = `
+                            <div>
+                                <div class="status ${result[count-2].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> <div class="status cinza">${count + 5}</div> 
+                            <div>
+            `
+        }else
+        if(count == 3){
+            statusItems = `
+                            <div>
+                                <div class="status ${result[count-3].acertou ? "verde" : "vermelho"}">${count - 2}</div> <div class="status  ${result[count-2].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-1].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status azul">${count + 1}</div> <div class="status cinza">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> 
+                            <div>
+            `;
+        }else{
+            statusItems = `
+                            <div>
+                                <div class="status ${result[count-4].acertou ? "verde" : "vermelho"}">${count -2}</div> <div class="status  ${result[count-3].acertou ? "verde" : "vermelho"}">${count - 1}</div> <div class="status  ${result[count-2].acertou ? "verde" : "vermelho"}">${count}</div> <div class="status ${result[count-1].acertou ? "verde" : "vermelho"}">${count + 1}</div> <div class="status azul">${count + 2}</div> <div class="status cinza">${count + 3}</div> <div class="status cinza">${count + 4}</div> 
+                            <div>
+            `;
+        }
+
+        
+        
+
+        let textos = "";
+        questionInfo.textoAux.map((value, index)=>{
+            textos += `
+                <p> ${value.texto}</p>
+            `;
+        })
+        statuss.innerHTML = statusItems;
+        questionNumber.innerText = `Questão ${count+1}`;
+
+        infoWrongAnswer.innerHTML = `
+                                        <h3> Resposta errada </h3>
+                                        <p>A alternativa correta seria: ${questionCorrect} </p>
         `;
+
+        textContainer.innerHTML = `<div id="texto-content">
+                                        
+                                        ${textos.substring(2, textos.length)}
+                                        <div class="fonte">  ${questionInfo.textoAux[0].fonte} </div>
+                                    </div>`
+
+        alternativeContainer.innerHTML = `<div id="alternativas">
+                                                <div id="pergunta-container">
+                                                    <p> ${questionInfo.pergunta}</p>
+
+                                                </div>
+                                                <div id="respostas-container"> 
+                                                    <div> <input type="radio" value="A" name="alternativas" id="A"> <label to="A"> A:  ${questionInfo.respostas.A} </label> </div>
+                                                    <div> <input type="radio" value="B" name="alternativas" id="B"> <label to="B"> B: ${questionInfo.respostas.B} </label> </div> 
+                                                    <div> <input type="radio" value="C" name="alternativas" id="C"> <label to="C"> C: ${questionInfo.respostas.C} </label> </div>
+                                                    <div> <input type="radio" value="D" name="alternativas" id="D"> <label to="D"> D: ${questionInfo.respostas.D} </label> </div>
+                                                    <div> <input type="radio" value="E" name="alternativas" id="E"> <label to="E"> E: ${questionInfo.respostas.E} </label> </div>
+                                                    <button onclick="addCounter()"> Enviar resposta</button>
+                                                </div>
+                                            </div>`;
     }
-
-
-    
-    let textos = "";
-    questionInfo.textoAux.map((value, index)=>{
-        textos += `
-            <p> ${value.texto}</p>
-        `;
-    })
-    statuss.innerHTML = statusItems;
-    questionNumber.innerText = `Questão ${count+1}`;
-
-    infoWrongAnswer.innerHTML = `
-                                    <h3> Resposta errada </h3>
-                                    <p>A alternativa correta seria: ${questionCorrect} </p>
-    `;
-
-    textContainer.innerHTML = `<div id="texto-content">
-                                    
-                                    ${textos.substring(2, textos.length)}
-                                    <div class="fonte">  ${questionInfo.textoAux[0].fonte} </div>
-                                </div>`
-
-    alternativeContainer.innerHTML = `<div id="alternativas">
-                                            <div id="pergunta-container">
-                                                <p> ${questionInfo.pergunta}</p>
-
-                                            </div>
-                                            <div id="respostas-container"> 
-                                                <div> <input type="radio" value="A" name="alternativas" id="A"> <label to="A"> A:  ${questionInfo.respostas.A} </label> </div>
-                                                <div> <input type="radio" value="B" name="alternativas" id="B"> <label to="B"> B: ${questionInfo.respostas.B} </label> </div> 
-                                                <div> <input type="radio" value="C" name="alternativas" id="C"> <label to="C"> C: ${questionInfo.respostas.C} </label> </div>
-                                                <div> <input type="radio" value="D" name="alternativas" id="D"> <label to="D"> D: ${questionInfo.respostas.D} </label> </div>
-                                                <div> <input type="radio" value="E" name="alternativas" id="E"> <label to="E"> E: ${questionInfo.respostas.E} </label> </div>
-                                                <button onclick="addCounter()"> Enviar resposta</button>
-                                            </div>
-                                        </div>`;
                                     
 }
 
@@ -110,6 +119,7 @@ function addCounter(){
         if (radios[i].checked) {
             if(radios[i].value == questionInfo.respostas.correta){
                 correctResponse = true;
+                correta +=1;
                 
             }else{
                 
@@ -163,5 +173,27 @@ function invisibleCardInstructions(){
     instructionsCard.className = "invisible";
 }
 
+function showFeedback(){
+
+    window.jsPDF = window.jspdf.jsPDF;
+    const doc = new jsPDF();
+    doc.setFontSize(20);
+    doc.text("Gabarito", 10, 10);
+
+    const keys = Object.keys(result);
+
+    keys.map((value, index)=>{
+
+        let resultQuestion =  result[value].acertou ? "Correta" : "Errada";
+        let text = result[value].tentativa + " - " + resultQuestion;
+
+        console.log(text);
+        doc.text(text, 10, (50 * index) + 50);
+    })
+
+    doc.save("gabarito.pdf")
+        
+        
+}
 
 mudarPergunta();

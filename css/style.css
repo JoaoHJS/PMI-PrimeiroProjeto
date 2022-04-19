@@ -96,7 +96,7 @@ body{
     position: relative;
 }
 
-#instrucoes{
+#instrucoes, #finalizada{
     background-color: #fff;
     padding: 40px 15%;
     width: 100%;
@@ -108,7 +108,7 @@ body{
     flex-direction: column;
     position: absolute;
 }
-#instrucoes button{
+#instrucoes button, #finalizada button{
     width: 200px;
     height: 64px;
     background-color: rgb(8, 103, 184);
@@ -116,6 +116,11 @@ body{
     border: 0px;
     outline: 0;
 }
+#instrucoes button:hover, #finalizada button:hover{
+    cursor: pointer;
+    background-color: #254B71;
+}
+
 .invisible{
     display: none !important;
 }
@@ -161,8 +166,8 @@ h3{
 
 #textos-container{
     width: 100%;
-    min-height: 60%;
-    max-height: 70%;
+    overflow-y: auto;
+    max-height: 60%;
     background-color: #C6DBF0;
     padding: 50px;
     border-radius: 5px 5px 0 0 ;
@@ -170,10 +175,13 @@ h3{
     position: relative;
 }
 
+#texto-content p{
+    text-align: justify;
+}
+
 #alternativas-container{
     width: 100%;
     min-height: 30%;
-    max-height: 40%;
     background-color: #254B71;
     color: rgb(237,237,237);
     border-radius: 0 0 5px 5px;
