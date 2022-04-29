@@ -99,7 +99,17 @@ body{
     align-items: center;
     flex-direction: column;
     position: relative;
+}
+
+#question{
     overflow-y: auto;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 #instrucoes, #finalizada, #relatorios{
