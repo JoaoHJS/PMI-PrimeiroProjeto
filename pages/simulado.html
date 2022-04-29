@@ -10,17 +10,19 @@
 <body>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"> </script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js" integrity="sha512-P3z5YHtqjIxRAu1AjkWiIPWmMwO9jApnCMsa5s0UTgiDDEjTBjgEqRK0Wn0Uo8Ku3IDa1oer1CIBpTWAvqbmCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/index.d.ts"></script>
     <div id="background-container"> <img id="enem-logo" src="../assets/logo-enem-svg.svg" alt="Enem LOGO" /></div>
     
     <div id="page-container">
         
         <div id="menu-container">
-            <div id="menu-items">
-                <ul> <img src="../assets/house-solid.svg" alt="Página principal" class="icon"><a href="../index.html">PÁGINA INICIAL</a></ul>
-                <ul> <img src="../assets/list-solid.svg" alt="Simulado" class="icon"><a href="./simulado.html">SIMULADO</a></ul>
-                <ul> <img src="../assets/circle-question-solid.svg" alt="Sobre" class="icon"><a href="./sobre.html">SOBRE</a></ul>
-                <ul> <img src="../assets/user-group-solid.svg" alt="Créditos" class="icon"> <a href="./creditos.html">CRÉDITOS</a></ul>
-            </div>
+            <ul id="menu-items">
+                <li><a href="../index.html"> <img src="../assets/house-solid.svg" alt="Página principal" class="icon"> <p class="text-menu"> PÁGINA INICIAL </p></a></li>
+                <li> <a href="./simulado.html"><img src="../assets/list-solid.svg" alt="Simulado" class="icon"><p class="text-menu">SIMULADO </p></a></li>
+                <li><a href="./sobre.html"> <img src="../assets/circle-question-solid.svg" alt="Sobre" class="icon"><p class="text-menu">SOBRE </p></a></li>
+                <li> <a href="./creditos.html"><img src="../assets/user-group-solid.svg" alt="Créditos" class="icon"> <p class="text-menu">CRÉDITOS </p></a></li>
+            </ul>
         </div>
         <div id="content-container">
             
@@ -56,12 +58,21 @@
            <div id="alternativas-container">
                 
             </div>
+            <div class="btn-containter">
+                <button onclick="addCounter()"> Enviar resposta</button>
+                <button onclick="skipQuestion()"> Pular pergunta </button>
+                <button onclick="stopSimulate()"> Finalizar simulado</button>
+
+            </div>
+            
             <div id="instrucoes">
                 <h3> Instruções </h3>
                 <p> Esse simulado é composto de 45 questões de multipla escolha, com alternativas entre A e E. Para responder, selecione a caixa da alternativa e envie sua resposta.                </p><br>
                 <p>Após enviar alguma resposta, irá aparecer se sua alternativa estava correta ou não. No topo da questão, aparecerá suas o feedback de suas respostas anteriores.                </p><br>
-                <p> Não se esqueça de preencher sua resposta! Um alerta aparecerá caso esqueça. </p><br>
+                <p> Não se esqueça de preencher sua resposta! Um alerta aparecerá caso esqueça. </p>
+                <p> Você pode pular a questão, porém caso você pule, não será possivel refazer. </p><br>
                 <p>No final do simulado, um gabarito com suas respostas e as respostas corretas.</p><br>
+                <p>Fonte: https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem</p>
                 <p><b> BOA PROVA! </b> </p><br>
                 <button onclick="invisibleCardInstructions()"> Iniciar simulado </button>
             </div>
@@ -70,16 +81,31 @@
                 <h3> Você concluiu o simulado! Parabens!</h3> <br><br>
                 
                 <h3> Você acertou <span id="resultado"></span> </h3><br><br>
+                <h3> Você pulou <span id="skip"></span> perguntas </h3><br><br>
                 <div id="botoes" >  
                     <button onclick="resetQuestions()"> Refazer prova </button>
+                    <button onclick="seeReports()"> Ver relatorios </button>
                     <button onclick="showFeedback()"> Ver gabarito </button>
                 </div>
             </div>
+            <div id="relatorios" class="invisible"> 
+                <h3> Suas respostas </h3>
+                <canvas style="max-width: 430px; max-height: 220px;" id="grafico-acertos"> </canvas><br>
+
+                <h3> Média de resposta </h3>
+                <select id="pergunta">
+                   
+                </select>
+                <canvas style="max-width: 430px;max-height: 220px;" id="grafico-media"> </canvas>
+                <button onclick="closeReports()"> Fechar relatorios </button>
             </div>
+            </div>
+           
         </div>
         
     </div>
-
+    <div id="logos-container"> <img src="../assets/cps-logo.png" alt="Centro Paula Sousa logo"> <img src="../assets/fatec-logo.png" alt="Fatec Carapicuiba logo"/> </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script defer src="../js/app.js"></script>
 </body>
 </html>

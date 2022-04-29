@@ -30,8 +30,8 @@ body{
 }
 
 #page-container{
-    height: 80%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
     z-index: 1;
     display: flex;
     border-radius: 5px;
@@ -39,7 +39,6 @@ body{
 }
 
 #menu-container{
-    height: 100%;
     width: 350px;
     background-color: rgb(8, 103, 184);
     padding: 3% 0;
@@ -57,17 +56,24 @@ body{
     gap: 20px;
 }
 
-#menu-items ul{
-    padding: 40px;
+#menu-items li{
+    width: 100%;
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     text-align: start;
     gap: 40px;
 }
 
-#menu-items ul i, #menu-items ul a{
+#menu-items li a{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 40px;
+}
+
+#menu-items li i, #menu-items ul a{
     width: 100%;
 }
 
@@ -80,43 +86,70 @@ body{
 #menu-items a{
     color: #fff;
 }
-#menu-items ul:hover{
+#menu-items li:hover{
     background-color: #254B71;
     cursor: pointer;
 }
 
 #content-container{
     background-color: #fff;
-    padding: 40px 8%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    padding: 0 30px;
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow-y: auto;
 }
 
-#instrucoes, #finalizada{
+#instrucoes, #finalizada, #relatorios{
     background-color: #fff;
     padding: 40px 15%;
     width: 100%;
     height: 100%;
     text-align: center;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-y: auto;
     position: absolute;
 }
-#instrucoes button, #finalizada button{
+#relatorios{
+    height: auto;
+    min-height: 100%;
+
+}
+
+#logos-container{
+    position: absolute;
+    bottom: 0;
+}
+
+#logos-container img{
+    height: 150px;
+}
+
+.btn-containter{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#instrucoes button, #finalizada button, .btn-containter button,  #relatorios button{
     width: 200px;
-    height: 64px;
+    min-height: 64px;
     background-color: rgb(8, 103, 184);
     color: #fff;
     border: 0px;
     outline: 0;
 }
-#instrucoes button:hover, #finalizada button:hover{
+#instrucoes button:hover, #finalizada button:hover, .btn-containter button:hover, #relatorios button:hover{
     cursor: pointer;
     background-color: #254B71;
 }
@@ -127,10 +160,9 @@ body{
 
 #apresentacao-container{
     background-color: #fff;
-    padding: 0  8%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    overflow-y: auto;
     align-items: center;
     flex-direction: column;
 }
@@ -182,6 +214,7 @@ h3{
 #alternativas-container{
     width: 100%;
     min-height: 30%;
+    overflow-y: auto;
     background-color: #254B71;
     color: rgb(237,237,237);
     border-radius: 0 0 5px 5px;
@@ -189,7 +222,7 @@ h3{
 }
 
 #card-sem-resposta{
-    position: absolute;
+    position: fixed;
     top: calc(50% - 100px);
     left: calc(50%- 200px);
     width: 400px;
@@ -212,7 +245,7 @@ h3{
 }
 
 #card-errada{
-    position: absolute;
+    position: fixed;
     top: calc(50% - 100px);
     left: calc(50%- 200px);
     width: 400px;
@@ -235,7 +268,7 @@ h3{
 }
 
 #card-certa{
-    position: absolute;
+    position: fixed;
     top: calc(50% - 100px);
     left: calc(50%- 200px);
     width: 400px;
@@ -291,18 +324,6 @@ h3{
 #links p:last-child{
     margin-top: 0;
 }
-.avatar{
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background-color:  rgb(237,237,237);
-    top: 25px;
-    border-radius: 50%;
-    left: -100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .avatar-img{
     width: 60px !important;
@@ -313,31 +334,20 @@ h3{
 }
 
 .chat-message-apresentacao{
-    background-color: rgb(237,237,237);
     color: rgb(66, 66, 66);
     height: 100%;
     width: 100%;
     position: relative;
     padding: 20px 50px;
     z-index: 1;
-}
-.chat-message-apresentacao::before{
-    content: "";
-    width: 0; 
-    height: 0; 
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid rgb(237,237,237);
-    position: absolute;
-    top: 55px;
-    left: -25px;
-    z-index: 0;
+
 }
 
+
 .chat-message{
-    background-color: rgb(237,237,237);
+
     color: rgb(66, 66, 66);
-    height: 90%;
+    height: auto;
     width: 90%;
     position: relative;
     padding: 20px 50px;
@@ -351,19 +361,6 @@ h3{
     font-weight: bold;
     text-align: right;
     padding-left: 20%;
-}
-
-.chat-message::before{
-    content: "";
-    width: 0; 
-    height: 0; 
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid rgb(237,237,237);
-    position: absolute;
-    top: 55px;
-    left: -25px;
-    z-index: 0;
 }
 
 .chat-message ul{
@@ -446,4 +443,109 @@ h3{
         font-size: 14px;
     }
     
+}
+@media (max-width: 1700px){
+
+    #page-container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1400px){
+
+    
+    #content-container{
+        padding: 0;
+    }
+}
+
+@media (max-width: 1100px){
+    body{
+        overflow-y: auto;
+    }
+
+    #page-container{
+        height: 75%;
+        flex-direction: column-reverse;
+        width: 90%;
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    #relatorios{
+        padding: 0 15%;
+    }
+    #menu-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+    }
+    #logos-container{
+        position: relative;
+        bottom: 0;
+    }
+    #logos-container img{
+        height: 100px;
+    }
+    
+
+    #content-container, #apresentacao-container{
+        height: 100%;
+    }
+    #menu-items{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #menu-items li{
+        padding: 10px;
+        gap: 20px;
+    }
+    #menu-items li a {
+        gap: 10px;
+        padding: 20px;
+    }
+}
+@media (max-width: 800px){
+    #apresentacao-container p{
+        text-align: justify;
+        font-size: 12px;
+    }
+    #menu-items li{
+        font-size: 12px;
+    }
+    #menu-items img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 700px){
+
+    #menu-items {
+    gap: 10px;
+    }
+    #menu-items li a {
+        gap: 5px;
+        padding: 0px;
+    }
+ 
+}
+
+@media (max-width: 500px) {
+    #enem-logo{
+        width: 90%;
+    }
+    .text-menu{
+        display: none;
+    }
+    .chat-message{
+        padding: 20px 20px;
+    }
+    #instrucoes, #finalizada, #relatorios{
+        font-size: 12px;
+    }
+
 }

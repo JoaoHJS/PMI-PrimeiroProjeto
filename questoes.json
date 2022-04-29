@@ -13,7 +13,8 @@
             "D": "diversificação do lazer recreativo.",
             "E": "desobrigação de afazeres domésticos.",
             "correta": "B"
-        } 
+        } ,
+        "estatisticas": [9, 52, 6, 24, 9]
     },
     "pergunta2" : {
         "textoAux" :[{
@@ -29,7 +30,8 @@
             "D": "ganho das financeiras.",
             "E": "eficiência dos mercados.",
             "correta": "A"
-        } 
+        },
+        "estatisticas": [61, 6, 21, 7, 5]
     },
     "pergunta3" : {
         "textoAux" :[{
@@ -45,7 +47,8 @@
             "D": "elementos ambientais singulares.",
             "E": "mercados consumidores internos.",
             "correta": "D"
-        } 
+        },
+        "estatisticas": [19, 21, 26, 2, 14]
     },
     "pergunta4" : {
         "textoAux" :[{
@@ -66,7 +69,8 @@
             "D": "defesa da privatização de sítios arqueológicos.",
             "E": "medidas de salvaguarda de peças museológicas.",
             "correta": "C"
-        } 
+        },
+        "estatisticas": [39, 18, 22, 6, 15]
     },
     "pergunta5" : {
         "textoAux" :[{
@@ -87,7 +91,8 @@
             "D": "Concepção sustentável da economia.",
             "E": "Protecionismo alfandegário dos Estados.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [2, 62, 6, 11, 18]
     },
     "pergunta6" : {
         "textoAux" :[{
@@ -103,7 +108,8 @@
             "D": "revitalização gradativa de solos.",
             "E": "geração de produtos recicláveis.",
             "correta": "A"
-        } 
+        },
+        "estatisticas": [28, 2, 12, 3, 9]
     },
     "pergunta7" : {
         "textoAux" :[{
@@ -119,7 +125,8 @@
             "D": "manter a proibição comercial.",
             "E": "promover o negócio familiar.",
             "correta": "D"
-        } 
+        },
+        "estatisticas": [16, 18, 25, 27, 14] 
     },
     "pergunta8" : {
         "textoAux" :[{
@@ -135,7 +142,8 @@
             "D": "Narrativas fílmicas  relacionadas  às  intempéries climáticas.",
             "E": "Argumentações literárias interligadas às catástrofes ambientais.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [14, 62, 12, 4, 8] 
     },
     "pergunta9" : {
         "textoAux" :[{
@@ -151,7 +159,8 @@
             "D": "hierarquização dos cargos executivos.",
             "E": "aplicação dos conhecimentos da ciência.",
             "correta": "C"
-        } 
+        },
+        "estatisticas": [25, 18, 26, 21, 11] 
     },
     "pergunta10" : {
         "textoAux" :[{
@@ -167,7 +176,8 @@
             "D": "instabilidade financeira e crises econômicas.",
             "E": "desenraizamento cultural e insegurança legal.",
             "correta": "E"
-        } 
+        },
+        "estatisticas": [29, 12, 5, 7, 46] 
     },
     "pergunta11" : {
         "textoAux" :[{
@@ -183,7 +193,8 @@
             "D": "incorporação das estratificações sociais.",
             "E": "substituição das atividades domésticas.",
             "correta": "D"
-        } 
+        },
+        "estatisticas": [25, 14, 9, 42, 1] 
     },
     "pergunta12" : {
         "textoAux" :[{
@@ -199,7 +210,8 @@
             "D": "mecanismos subjetivos de identificação.",
             "E": "repressões racionalizadas do narcisismo.",
             "correta": "D"
-        } 
+        },
+        "estatisticas": [29, 9, 20, 15, 27] 
     },
     "pergunta13" : {
         "textoAux" :[{
@@ -215,7 +227,8 @@
             "D": "flexibilização das regras de participação política.",
             "E": "alteração da organização da paisagem geográfica.",
             "correta": "E"
-        } 
+        },
+        "estatisticas": [13, 11, 17, 21, 37] 
     },
     "pergunta14" : {
         "textoAux" :[{
@@ -231,7 +244,8 @@
             "D": "padronização das culturas.",
             "E": "uniformização das informações.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [7, 60, 16, 8, 9] 
     },
     "pergunta15" : {
         "textoAux" :[{
@@ -247,7 +261,8 @@
             "D": "Autocontrole moral.",
             "E": "Inconformismo eleitoral.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [21, 32, 31, 10, 5] 
     },
     "pergunta16" : {
         "textoAux" :[{
@@ -263,7 +278,8 @@
             "D": "valorização das funções tradicionais.",
             "E": "priorização da gestão participativa.",
             "correta": "A"
-        } 
+        },
+        "estatisticas": [58, 9, 18, 10, 5] 
     },
     "pergunta17" : {
         "textoAux" :[{
@@ -279,7 +295,8 @@
             "D": "subordinação aos fluxos globais.",
             "E": "incentivo à política de modernização.",
             "correta": "D"
-        } 
+        },
+        "estatisticas": [30, 5, 14, 43, 7]  
     },
     "pergunta18" : {
         "textoAux" :[{
@@ -295,7 +312,8 @@
             "D": "estabelecimento de práticas agroecológicas.",
             "E": "enriquecimento das comunidades autóctones.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [10, 21, 17, 19, 33] 
     },
             
     "pergunta19": {
@@ -312,7 +330,8 @@
             "D":"valorações de conexões simétricas.",
             "E":"hierarquizações de origem biológica.",
             "correta":"C"
-        }
+        },
+        "estatisticas": [2, 3, 89, 3, 3] 
     },
 
         "pergunta20": {
@@ -329,7 +348,8 @@
                 "D":"paradigmas do processo indagativo.",
                 "E":"domínios do fetichismo da mercadoria.",
                 "correta":"A"
-        }
+        },
+        "estatisticas": [21, 12, 24, 9, 33] 
     },
         "pergunta21": {
             "textoAux": [{
@@ -345,7 +365,8 @@
                 "D":"contenção da corrupção política.",
                 "E":"expansão do período de reclusão.",
                 "correta":"B"
-        }
+        },
+        "estatisticas": [18, 60, 10, 3, 9] 
     },
         "pergunta22" :{
             "textoAux": [{
@@ -361,7 +382,8 @@
                 "D":"remodelação dos sistemas politicos e das administrações locais.",
                 "E":"reconfiguração dos espaços ocupados e das dinâmicas comunitárias.",
                 "correta":"E"
-        }
+        },
+        "estatisticas": [27, 12, 7, 17, 36] 
 
     },
         "pergunta23" :{
@@ -378,7 +400,8 @@
                 "D": "distanciar os grupos de culturas locais.",
                 "E":"angariar o apoio de segmentos étnicos externos.",
                 "correta":"E"
-        }  
+        },
+        "estatisticas": [21, 19, 17, 20, 22]   
     },
 
         "pergunta24":{
@@ -395,7 +418,8 @@
                 "D":"conter o fluxo migratório do campo para a cidade.",
                 "E":"propor a criação de novas unidades da federação.",
                 "correta":"C"
-        }
+        },
+        "estatisticas": [6, 10, 60, 14, 11] 
     },
 
         "pergunta25" :{
@@ -412,7 +436,8 @@
                 "D":"criação de gado para o aprimoramento genético.",
                 "E":"reflorestamento comercial para a produção orgânica.",
                 "correta":"C"
-        }
+        },
+        "estatisticas": [46, 9, 14, 17, 14] 
     },
         "pergunta26" :{
             "textoAux": [{
@@ -428,7 +453,8 @@
                 "D":" Derramamento basáltico.",
                 "E":"Compactação superficial.",
                 "correta":"A"
-        }
+        },
+        "estatisticas": [26, 20, 20, 21, 12] 
     },
         "pergunta27" :{
             "textoAux": [{
@@ -444,7 +470,8 @@
                 "D":"Valorização dos condomínios fechados.",
                 "E":"Fortalecimento das associações de bairro.",
                 "correta":"E"
-        }
+        },
+        "estatisticas": [21, 18, 15, 16, 29] 
     },
     "pergunta28" :{
         "textoAux": [{
@@ -460,7 +487,8 @@
             "D":"campanha anticomunista.",
             "E":"radicalização oposicionista.",
             "correta":"A"
-        }
+        },
+        "estatisticas": [40, 29, 21, 3, 7] 
     },
     "pergunta29" :{
         "textoAux": [{
@@ -476,7 +504,8 @@
             "D":"reprimir indivíduos engajados em revoltas nativistas.",
             "E":"controlar manifestações artísticas de comunidades autóctones.",
             "correta":"B"
-        }
+        },
+        "estatisticas": [16, 37, 12, 14, 20] 
     },
     "pergunta30" :{
         "textoAux": [{
@@ -492,7 +521,8 @@
             "D":"imposição da farmacologia nativa.",
             "E":"conjugação de saberes empíricos.",
             "correta":"E"
-        }
+        },
+        "estatisticas": [12, 13, 22, 16, 38] 
     },
     "pergunta31" :{
         "textoAux": [{
@@ -509,7 +539,8 @@
             "D":"corporações de ofícios.",
             "E":"universidades medievais.",
             "correta":"B"
-        }
+        },
+        "estatisticas": [20, 55, 5, 16, 4] 
     },
     "pergunta32" :{
         "textoAux": [{
@@ -526,7 +557,8 @@
             "D":"lugar ocupado pelas associações de acadêmicos no fortalecimento das agremiações estudantis.",
             "E":"protagonismo assumido pelos meios de comunicação no desenvolvimento das nações alfabetizadas.",
             "correta":"A"
-        }
+        },
+        "estatisticas": [48, 9, 15, 16, 12] 
     },
     "pergunta33" :{
         "textoAux": [{
@@ -547,7 +579,8 @@
             "D":"superficialidade dos interesses políticos.",
             "E":"superioridade dos aspectos econômicos.",
             "correta":"A"
-        }
+        },
+        "estatisticas": [20, 8, 44, 17, 11] 
     },
     "pergunta34" :{
         "textoAux": [{
@@ -563,7 +596,8 @@
             "D":"Incorporação de saberes tradicionais. ",
             "E":"Importação de mão de obra qualificada.",
             "correta":"E"
-        }
+        },
+        "estatisticas": [18, 21, 24, 21, 15] 
     },
 
     "pergunta35" :{
@@ -580,7 +614,8 @@
             "D":"ilegitimidade na atuação dos movimentos de representação classista.",
             "E":"vagarosidade na dinâmica de aperfeiçoamento dos programas partidários.",
             "correta":"C"
-        }
+        },
+        "estatisticas": [6, 11, 47, 20, 17] 
     },
     "pergunta36" :{
         "textoAux": [{
@@ -596,7 +631,8 @@
             "D":"disponibilidade de financiamento e pesquisa avançada.",
             "E":"remuneração de professores e extinção do analfabetismo.",
             "correta":"B"
-        }
+        },
+        "estatisticas": [19, 38, 14, 7, 21] 
     },
     "pergunta37" : {
         "textoAux" :[{
@@ -612,7 +648,8 @@
             "D": "explicação fisicalista.",
             "E": "suspensão judicativo.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [21, 39, 15, 12, 12]  
     },
     "pergunta38" : {
         "textoAux" :[{
@@ -628,7 +665,8 @@
             "D": "destituição dos valores do matrimônio",
             "E": "etnografia das celebrações religiosas",
             "correta": "A"
-        } 
+        },
+        "estatisticas": [68, 5, 8, 12, 8]  
     },
     "pergunta39" : {
         "textoAux" :[{
@@ -644,13 +682,14 @@
             "D": "manipular a memória individual",
             "E": "modernizar o comércio tradicional",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [33, 52, 6, 6, 3]  
     } ,
     "pergunta40" : {
         "textoAux" :[{
             "texto": "",
             "fonte": "Escravo fugido. Jornal Correio Paulistano, 13 de abril de 1879. Disponível em: http://bndigital.bn.gov.br. Acesso em: 2 ago. 2019 (adaptado).",
-            "imagem" : "img/questão85.png"
+            "imagem" : "../img/questao85.png"
         }], 
         "pergunta":"No anúncio publicado na segunda metade do século XIX, qual a estratégia de resistência escrava apresentada?",
         "respostas" : {
@@ -660,7 +699,8 @@
             "D": "Regularização das funções remuneradas.",
             "E": "Constituição de economia de subsistência.",
             "correta": "A"
-    }
+        },
+        "estatisticas": [46, 9, 7, 26, 11] 
 },
     "pergunta41" : {
         "textoAux" :[{
@@ -676,7 +716,8 @@
             "D": "recepcionar o método experimental.",
             "E": "incentivar a suspensão dos juízos.",
             "correta": "A"
-        } 
+        },
+        "estatisticas": [44, 3, 9, 27, 17]  
     },
     "pergunta42" : {
         "textoAux" :[{
@@ -692,7 +733,8 @@
             "D": "condena os modelos filosóficos da Antiguidade Clássica.",
             "E": "consagra a realização humana ao campo transcendental.",
             "correta": "E"
-        } 
+        },
+        "estatisticas": [10, 26, 33, 13, 17]  
     },
     "pergunta43" : {
         "textoAux" :[{
@@ -708,13 +750,14 @@
             "D": "Condenação da alimentação impura",
             "E": "Desvalorização da materialidade corpórea.",
             "correta": "E"
-        } 
+        },
+        "estatisticas": [8, 10, 13, 6, 63]  
     },
     "pergunta44" : {
         "textoAux" :[{
             "texto": "",
             "fonte": "Disponível em: www.cdcc.usp.br. Acesso em: 27 jul. 2010 (adaptado).",
-            "imagem" : "img/questao89.png"
+            "imagem" : "../img/questao89.png"
         }], 
         "pergunta":"Considerando as informações apresentadas, o prédio do Congresso Nacional, em Brasília, no dia 21 de junho, às 12 horas, projetará sua sombra para a direção",
         "respostas" : {
@@ -724,13 +767,14 @@
             "D": "oeste.",
             "E": "nordeste.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [26, 28, 2, 33, 9]  
     },
     "pergunta45" : {
         "textoAux" :[{
             "texto": "TEXTO I",
             "fonte": "EIGENHEER, E. M. Lixo: a limpeza urbana através dos tempos. Porto Alegre: Gráfica Palloti, 2009.TEXTO II",
-            "imagem" : "img/questao90.png"
+            "imagem" : "../img/questao90.png"
         },
     {
             "texto": "A repugnante tarefa de carregar lixo e os dejetos da casa para as praças e praias era geralmente destinada ao único escravo da família ou ao de menor status ou valor. Todas as noites, depois das dez horas, os escravos conhecidos popularmente como “tigres” levavam tubos ou barris de excremento e lixo sobre a cabeça pelas ruas do Rio.",
@@ -745,7 +789,8 @@
             "D": "superação das exclusões econômicas. ",
             "E": "ressignificação das heranças religiosas.",
             "correta": "B"
-        } 
+        },
+        "estatisticas": [9, 26, 19, 23, 23]  
     }
           
 }
