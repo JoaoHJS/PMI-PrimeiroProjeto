@@ -455,7 +455,7 @@ h3{
 
     
     #content-container{
-        padding: 0;
+        padding: 0 10px;
     }
 }
 
@@ -463,7 +463,14 @@ h3{
     body{
         overflow-y: auto;
     }
-
+    #textos-container{
+        min-height: 300px;
+        padding: 20px;
+    }
+    #respostas-container{
+        gap:5px;
+        min-height: 200px;
+    }
     #page-container{
         height: 75%;
         flex-direction: column-reverse;
