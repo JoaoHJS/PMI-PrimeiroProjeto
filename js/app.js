@@ -28,13 +28,76 @@ let questionInfo = questions[questionsList[count]];
 let statusItems = "";
 let correta = 0;
 let skip = 0;
+var myChartFinal;
+
 function mudarPergunta(){
     if(count == 45 || finished == true){
         
-        spanResult.innerText = correta + "/" + count;
+        spanResult.innerText = correta + "/45 - Você errou: " + (45 - correta - skip) + "/45" ;
+
         spanSkip.innerText = skip;
         finishedCard.className = "";
+        const keys = Object.keys(result);
+        let errada = 0;
+        keys.map((a)=>{
+            if(result[a].acertou == false && result[a].tentativa != "skip"){
+                errada +=1;
+            }
+        })
+        const graficoFinal = document.getElementById("grafico-final").getContext('2d');
+        const dadosFinal =  {
+            type: "bar",
+            data: {
+                labels: ['Acertos', 'Erros', 'Em branco'],
+                datasets: [{
+                    label: 'Suas respostas',
+                    data: [correta, errada, skip],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                      display: false
+                    }
+                },
+                scales: {
+                    x:{
+                        title: {
+                          display: true,
+                          text: "Resposta"
+                        }
+                      },
+    
+                    y:{
+                        title: {
+                          display: true,
+                          text: "Quantidade"
+                        }
+                      }
+                  }
+            }
+        }
+        try{
+            myChartFinal.data = dadosFinal.data;
+            myChartFinal.update();
+
+        }catch{
+            myChartFinal = new Chart(graficoFinal, dadosFinal)
+        }
+        
     }else{
+        
         questionInfo = questions[questionsList[count]];
 
         if(count == 0){
@@ -132,6 +195,7 @@ function mudarPergunta(){
 }
 function stopSimulate(){
     finished = true;
+    skip += 45 - count;
     finishedCard.className = "";
     mudarPergunta();
 }
@@ -142,6 +206,7 @@ function resetQuestions(){
     skip = 0;
     statusItems = "";
     correta = 0;
+    myChartFinal.destroy()
     mudarPergunta();
     finished = false;
     finishedCard.className = "invisible";
@@ -168,7 +233,7 @@ function addCounter(){
             if(radios[i].value == questionInfo.respostas.correta){
                 correctResponse = true;
                 correta +=1;
-                console.log(correta)
+
             }else{
                 
                 correctResponse = false;
@@ -179,7 +244,6 @@ function addCounter(){
             notResponse += 1;
         }
     }
-    console.log(result)
     if(notResponse < radios.length){
         
         if(correctResponse){
@@ -238,9 +302,16 @@ function showFeedback(){
         let tentativa =  result[value].tentativa == "skip" ? "Questão pulada" : result[value].tentativa;
         let correta = questions[questionsList[index]].respostas.correta;
 
-        rows = [...rows , [index+1, resultQuestion, tentativa, correta]]
-        console.log(rows)
+        rows = [...rows , [index+1, resultQuestion, tentativa, correta]];
+
     })
+
+    for(let cont = 0; cont < 45; cont++ ){
+        if(!keys[cont]){
+            rows = [...rows , [cont+1, "Não", "Questão pulada", questions[questionsList[cont]].respostas.correta]];
+
+        }
+    }
     doc.autoTable(columns, rows);
     doc.save('gabarito.pdf');
         
@@ -297,8 +368,25 @@ function seeReports(){
                 legend: {
                   display: false
                 }
-            }
+            },
+            scales: {
+                x:{
+                    title: {
+                      display: true,
+                      text: "Resposta"
+                    }
+                  },
+
+                y:{
+                    title: {
+                      display: true,
+                      text: "Quantidade"
+                    }
+                  }
+              }
+        
         }
+        
     }
     const grafico2 = document.getElementById("grafico-media").getContext('2d');
     const dados2 =  {
@@ -330,7 +418,22 @@ function seeReports(){
                 legend: {
                   display: false
                 }
-            }
+            },
+            scales: {
+                x:{
+                    title: {
+                      display: true,
+                      text: "Alternativas"
+                    }
+                  },
+
+                y:{
+                    title: {
+                      display: true,
+                      text: "Quantidade"
+                    }
+                  }
+              }
         }
     }
     perguntaSelect.addEventListener('change', (event)=>{

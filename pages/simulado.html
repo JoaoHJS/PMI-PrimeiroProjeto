@@ -82,8 +82,14 @@
             <div id="finalizada" class="invisible"> 
                 <h3> Você concluiu o simulado! Parabens!</h3> <br><br>
                 
-                <h3> Você acertou <span id="resultado"></span> </h3><br><br>
-                <h3> Você pulou <span id="skip"></span> perguntas </h3><br><br>
+                <h3> Você acertou <span id="resultado"></span> </h3><br>
+                <h3> Você pulou <span id="skip"></span> perguntas </h3><br>
+                <div >
+                    <canvas style="height: 200px; width: 300px;" id="grafico-final">
+
+                    </canvas><br/>
+                    <p style="font-size: 10px; "><b> Fonte:</b> Autoria da equipe</p><br/>
+                </div>
                 <div id="botoes" >  
                     <button onclick="resetQuestions()"> Refazer prova </button>
                     <button onclick="seeReports()"> Ver relatorios </button>
@@ -93,13 +99,15 @@
             <div id="relatorios" class="invisible"> 
                 <h3> Suas respostas </h3>
                 <canvas style="max-width: 430px; max-height: 220px;" id="grafico-acertos"> </canvas><br>
+                <p style="font-size: 10px; "><b> Fonte:</b> Autoria da equipe</p><br/>
 
                 <h3> Média de resposta </h3>
                 <select id="pergunta">
                    
                 </select>
                 <canvas style="max-width: 430px;max-height: 220px;" id="grafico-media"> </canvas>
-                <button onclick="closeReports()"> Fechar relatorios </button>
+                <button onclick="closeReports()"> Fechar relatorios </button><br/>
+                <p style="font-size: 10px; "><b> Fonte:</b> Autoria da equipe (Dados ficticios)</p><br/>
             </div>
             </div>
            
