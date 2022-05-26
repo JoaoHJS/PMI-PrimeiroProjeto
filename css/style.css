@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
+
+/* ===================== Reset CSS ============================= */
 *{
     padding: 0;
     margin: 0;
@@ -16,6 +18,15 @@ body{
     flex-direction: column;
     background-color: rgb(229, 229, 229);
 }
+h3{
+    color: #254B71;
+    font-size: 30px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ===================== Principais containers ============================= */
 
 #background-container{
     position: absolute;
@@ -37,6 +48,8 @@ body{
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 25%) 4px 4px 4px;
 }
+
+/* ===================== Menu ============================= */
 
 #menu-container{
     width: 350px;
@@ -90,6 +103,8 @@ body{
     background-color: #254B71;
     cursor: pointer;
 }
+
+/* ===================== Container com as informações ============================= */
 
 #content-container{
     background-color: #fff;
@@ -164,9 +179,6 @@ body{
     background-color: #254B71;
 }
 
-.invisible{
-    display: none !important;
-}
 
 #apresentacao-container{
     background-color: #fff;
@@ -180,12 +192,6 @@ body{
 #apresentacao-container h2{
     color: #254B71;
     font-size: 60px;
-}
-h3{
-    color: #254B71;
-    font-size: 30px; 
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 #apresentacao-container p{
@@ -230,6 +236,8 @@ h3{
     border-radius: 0 0 5px 5px;
 
 }
+
+/* ===================== Pop ups ============================= */
 
 #card-sem-resposta{
     position: fixed;
@@ -304,11 +312,6 @@ h3{
     margin-top: 0 !important ;
 }
 
-.visible{
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
 
 #alternativas{
     padding: 10px 50px;
@@ -444,6 +447,20 @@ h3{
     background-color: #F05D5D;
 }
 
+/* Classes usadas para deixar os pop ups e container invisiveis*/
+.visible{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.invisible{
+    display: none !important;
+}
+
+
+/* ==================== Media query para telas maiores ==============================*/
 
 @media (max-height: 1100px){
   
@@ -469,6 +486,9 @@ h3{
     }
 }
 
+/* ==================== Media query para tablets e notebooks ==============================*/
+
+
 @media (max-width: 1100px){
     body{
         overflow-y: auto;
@@ -481,6 +501,8 @@ h3{
         gap:5px;
         min-height: 200px;
     }
+
+    /* Muda a direção do menu e a parte de conteudo*/
     #page-container{
         height: 75%;
         flex-direction: column-reverse;
@@ -492,7 +514,7 @@ h3{
     #relatorios{
         padding: 0 15%;
     }
-    #menu-container{
+    #menu-container{ 
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -525,6 +547,9 @@ h3{
         padding: 20px;
     }
 }
+
+/* ==================== Media query para tablet ==============================*/
+
 @media (max-width: 800px){
     #apresentacao-container p{
         text-align: justify;
@@ -551,6 +576,7 @@ h3{
  
 }
 
+/* ==================== Media query para celular ==============================*/
 @media (max-width: 500px) {
     #enem-logo{
         width: 90%;

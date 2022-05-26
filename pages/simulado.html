@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+     <!--Instalação das dependencias-->
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"> </script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js" integrity="sha512-P3z5YHtqjIxRAu1AjkWiIPWmMwO9jApnCMsa5s0UTgiDDEjTBjgEqRK0Wn0Uo8Ku3IDa1oer1CIBpTWAvqbmCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/index.d.ts"></script>
+
+     <!-- Container com a logo do Enem e Inep-->
     <div id="background-container"> <img id="enem-logo" src="../assets/logo-enem-svg.svg" alt="Enem LOGO" /></div>
     
     <div id="page-container">
-        
+          <!-- Container usado para o menu-->
         <div id="menu-container">
             <ul id="menu-items">
                 <li><a href="../index.html"> <img src="../assets/house-solid.svg" alt="Página principal" class="icon"> <p class="text-menu"> PÁGINA INICIAL </p></a></li>
@@ -24,39 +27,48 @@
                 <li> <a href="./creditos.html"><img src="../assets/user-group-solid.svg" alt="Créditos" class="icon"> <p class="text-menu">CRÉDITOS </p></a></li>
             </ul>
         </div>
+         <!-- Container usado para o conteudo-->
         <div id="content-container">
             
             <div id="question">
+                <!-- Pop up sem resposta-->
                 <div id="card-sem-resposta">
-                <img src="../assets/triangle-exclamation-solid.svg" alt="Alerta sem resposta" class="icon">
-                <div>
-                    <h3> Sem resposta </h3>
-                    <p> Não se esqueça de escolher sua alternativa antes de ir para a próxima pergunta!</p>
+                    <img src="../assets/triangle-exclamation-solid.svg" alt="Alerta sem resposta" class="icon">
+                    <div>
+                        <h3> Sem resposta </h3>
+                        <p> Não se esqueça de escolher sua alternativa antes de ir para a próxima pergunta!</p>
+                    </div>
                 </div>
-            </div>
-            <div id="card-errada">
-                <img src="../assets/circle-xmark-solid.svg" alt="Alerta sem resposta" class="icon">
-                <div id="info-resposta">
-                    
+                <!-- Pop up resposta errada-->
+                <div id="card-errada">
+                    <img src="../assets/circle-xmark-solid.svg" alt="Alerta sem resposta" class="icon">
+                    <div id="info-resposta">
+                        
+                    </div>
                 </div>
-            </div>
-            <div id="card-certa">
-                <img src="../assets/circle-check-solid.svg" alt="Alerta sem resposta" class="icon">
-                <div>
-                    <h3> Resposta correta </h3>
-                    <p> Você respondeu a resposta correta!</p>
+                 <!-- Pop up sem certa-->
+                <div id="card-certa">
+                    <img src="../assets/circle-check-solid.svg" alt="Alerta sem resposta" class="icon">
+                    <div>
+                        <h3> Resposta correta </h3>
+                        <p> Você respondeu a resposta correta!</p>
+                    </div>
                 </div>
-            </div>
+
+
             <h3 id="numero-questao"> Questão: </h3>
             <div id="status-atividades">
 
             </div>
+             <!-- Container no qual será adicionado os textos-->
            <div id="textos-container"> 
                 
            </div>
+             <!-- Container no qual será adicionado as alternativas-->
            <div id="alternativas-container">
                 
             </div>
+              <!-- Container com os botões-->
             <div class="btn-containter">
                 <button onclick="addCounter()"> Enviar resposta</button>
                 <button onclick="skipQuestion()"> Pular pergunta </button>
@@ -66,7 +78,7 @@
             </div>
 
             
-            
+              <!-- Container com as instruções-->
             <div id="instrucoes">
                 <h3> Instruções </h3>
                 <p> Esse simulado é composto de 45 questões de multipla escolha, com alternativas entre A e E. Para responder, selecione a caixa da alternativa e envie sua resposta.                </p><br>
@@ -79,6 +91,7 @@
                 <button onclick="invisibleCardInstructions()"> Iniciar simulado </button>
             </div>
 
+              <!-- Container com os resultados, no qual as informações serão adicionadas pelo DOM-->
             <div id="finalizada" class="invisible"> 
                 <h3> Você concluiu o simulado! Parabens!</h3> <br><br>
                 
@@ -96,6 +109,8 @@
                     <button onclick="showFeedback()"> Ver gabarito </button>
                 </div>
             </div>
+
+              <!-- Container com os relatorios-->
             <div id="relatorios" class="invisible"> 
                 <h3> Suas respostas </h3>
                 <canvas style="max-width: 430px; max-height: 220px;" id="grafico-acertos"> </canvas><br>
@@ -114,7 +129,10 @@
         </div>
         
     </div>
+    <!-- Container com os logos da Fatec e do CPS-->
     <div id="logos-container"> <img src="../assets/cps-logo.png" alt="Centro Paula Sousa logo"> <img src="../assets/fatec-logo.png" alt="Fatec Carapicuiba logo"/> </div>
+
+    <!--Instalação das dependencias-->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script defer src="../js/app.js"></script>
 </body>
